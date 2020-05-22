@@ -1,2 +1,2 @@
 # Ucsal
- Repositorio para trabalhos da faculdade
+ Repositorio para trabalhos da faculdade.
