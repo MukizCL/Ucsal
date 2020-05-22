@@ -35,7 +35,7 @@ f.	Identiﬁcar o vencedor / perdedor
 
 Na ﬁgura abaixo, pode-se observar a tela inicial do jogo quando executado.
 
-<img src=/Avaliacoes/TerceiraAtvAvaliativa3Uni1Seme/img/Screenshot_1.jpg>
+<img src=/Avaliacoes/TerceiraAtvAvaliativa1Uni1Seme/img/Screenshot_1.jpg>
 
 2.	O Jogo Batalha Naval
 
@@ -55,11 +55,11 @@ e.	Validar a jogada
 f.	Efetuar a estratégia
 g.	Identiﬁcar o vencedor / perdedor
 
-<img src=/Avaliacoes/TerceiraAtvAvaliativa3Uni1Seme/img/Screenshot_2.jpg>
+<img src=/Avaliacoes/TerceiraAtvAvaliativa1Uni1Seme/img/Screenshot_2.jpg>
 
 3.	O Jogo Campo Minado
 
 Esse jogo foi inventado por Robert Donner em 1989, para ser jogado por um único jogador, e tem como objetivo revelar as minas distribuídas pelo tabuleiro, evitando que qualquer uma delas seja detonada. Cada quadrado do tabuleiro irá revelar se há uma mina ou não após receber um clique. Se o quadrado clicado contiver uma mina, então o jogo acaba. Se, por outro lado, o quadrado não contiver uma mina poderá aparecer um valor indicando a quantidade de quadrados adjacentes que contêm minas ou nenhum número aparece. Neste caso, o jogo revela automaticamente os quadrados que se encontram adjacentes ao quadrado vazio, já que não podem conter minas. O jogador vence o jogo quando todos os quadrados que não tem minas forem revelados. (Fonte: h ttps://pt.wikipedia.org/wiki/Campo_minado).
 Para essa atividade, considere um tabuleiro de tamanho 16 x 16 para ser distribuído as “minas”.
 
-<img src=/Avaliacoes/TerceiraAtvAvaliativa3Uni1Seme/img/Screenshot_3.jpg>
+<img src=/Avaliacoes/TerceiraAtvAvaliativa1Uni1Seme/img/Screenshot_3.jpg>
