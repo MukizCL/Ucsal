@@ -7,13 +7,20 @@ import java.util.Scanner;
 public class Jogos {
 
 	public static void main(String[] args) {
-		
+		bemVindo();
 		cadastroUsuario("", 0);
 		
 
 
 
 	}
+	//MÉTODO DE BOAS VINDAS
+	public static void bemVindo() {
+		imprimir("Seja bem vindo LPA Games 1.0"
+				+ "\nAntes de irmos para o menu, Faça o login"
+				+ "\n==========================================\n");
+	}
+	
 	//MÉTODO QUE CADASTRA OS USUÁRIOS:
 	public static void cadastroUsuario(String user, int op) {
 		Scanner imput = new Scanner(System.in);
