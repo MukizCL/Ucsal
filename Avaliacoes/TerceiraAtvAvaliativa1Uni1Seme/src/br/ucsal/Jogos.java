@@ -101,7 +101,8 @@ public class Jogos {
 					cadastroUsuario(usuario[0], menu);
 					} else {
 					
-					imprimir("Iniciando Jogo da forca...");
+					imprimir("\n ==========================="
+							+ "\nIniciando Jogo da forca...");
 					}
 					break;
 			case 2:
@@ -110,7 +111,8 @@ public class Jogos {
 					cadastroUsuario(usuario[0], menu);
 					} else {
 					
-					imprimir("Iniciando Batalha naval...");
+					imprimir("\n ==========================="
+							+ "\nIniciando Batalha naval...");
 					}
 					break;
 			case 3: 
