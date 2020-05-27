@@ -16,7 +16,7 @@ public class Jogos {
 	}
 	//MÉTODO DE BOAS VINDAS
 	public static void bemVindo() {
-		imprimir("Seja bem vindo LPA Games 1.0"
+		imprimir("Seja bem vindo ao LPA Games 1.0"
 				+ "\nAntes de irmos para o menu, Faça o login"
 				+ "\n==========================================\n");
 	}
@@ -105,13 +105,15 @@ public class Jogos {
 		
 		
 		if(senha[0] != 111) {
-			imprimir("Insira a senha do Usuario 1 \n");
+			imprimir("Insira a senha do Usuario 1"
+					+ "                     'A senha para o usuario 1 é: 111' \n");
 			senha[0] = imput.nextInt();
 			while(senha[0] != 111) {
 				imprimir("Você digitou a senha errada, Tente novamente: \n");
 				senha[0] = imput.nextInt();	
 			}
-		} else { imprimir("Insira a senha do Usuario 2 \n");
+		} else { imprimir("Insira a senha do Usuario 2 "
+				+ "                     'A senha para o usuario 2 é: 222' \n");
 		senha[1] = imput.nextInt();
 		while(senha[1] != 222) {
 			imprimir("Você digitou a senha errada, Tente novamente: \n");
