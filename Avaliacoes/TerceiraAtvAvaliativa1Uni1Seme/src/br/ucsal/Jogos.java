@@ -155,9 +155,9 @@ public class Jogos {
 			scorep2 = resultForca;
 		}
 		}
-		if(scorep1 < scorep2) {
+		if(scorep1 > scorep2) {
 			imprimir("O Jogador " + user1 + " ganhou de " + user2 + " com  " + scorep1 + " erros, contra " + scorep2 + " do jogador " + user2 );
-		} else if (scorep1 > scorep2) {
+		} else if (scorep1 < scorep2) {
 			imprimir("O Jogador " + user2 + " ganhou de " + user1 + " com  " + scorep2 + " erros, contra " + scorep1 + " do jogador " + user1 );
 		} else if (scorep1 == scorep2) {
 			imprimir("O jogo empatou");
