@@ -29,7 +29,7 @@ public class Jogos {
 		usuario[0] = user;
 		if(usuario[0].equals("")) {
 			imprimir("Insira o nome do usuario 1: \n");
-			usuario[0] = imput.next();
+			usuario[0] = imput.next().toUpperCase();
 			validaUsuario(0);
 			imprimir ("Usuario1: " + usuario[0] + " - Validado com sucesso" + "\n");
 			imprimir("\n ==========================="
@@ -38,7 +38,7 @@ public class Jogos {
 			menu(usuario, op);
 		} else {
 			imprimir("Insira o nome do usuario 2\n");
-			usuario[1] = imput.next();
+			usuario[1] = imput.next().toUpperCase();
 			validaUsuario(111);
 			imprimir ("Usuario2: " + usuario[1] + " - Validado com sucesso" + "\n"); 
 			imprimir("\n ==========================="
@@ -135,43 +135,42 @@ public class Jogos {
 	public static int resultForca = 0;
 	public static void inicioForca(String user1, String user2) {
 		int scorep1 = 0, scorep2 = 0;
-		int forcagame = 1;
+		int forcaGame = 0;
 		
 		imprimir("Bem vindo ao jogo da forca. "
 				+ "\nVocê terá 6 tentativas para adivinhar a palavra dita pelo seu oponente\n"
 				+ "\nquem obtiver menos erros ganha! \n");
-		for (int i = 0; i <= 1; i++) {
+		for (int i = 0; i < 1; i++) {
 			
 		
-		if(forcagame == 1) {
+		if(forcaGame == 0) {
 			
 			forca(user1, user2);
 			scorep1 = resultForca;
+			forcaGame = 1;
 		}
-		if(forcagame == 2) {
+		if(forcaGame == 1) {
 			
 			forca(user2, user1);
 			scorep2 = resultForca;
 		}
 		}
 		if(scorep1 < scorep2) {
-			imprimir("O Jogador " + user1 + " ganhou de " + user2 + " com apenas " + scorep1 + " erros, contra " + scorep2 + " do jogador " + user2 );
+			imprimir("O Jogador " + user1 + " ganhou de " + user2 + " com  " + scorep1 + " erros, contra " + scorep2 + " do jogador " + user2 );
 		} else if (scorep1 > scorep2) {
-			imprimir("O Jogador " + user2 + " ganhou de " + user1 + " com apenas " + scorep2 + " erros, contra " + scorep1 + " do jogador " + user1 );
+			imprimir("O Jogador " + user2 + " ganhou de " + user1 + " com  " + scorep2 + " erros, contra " + scorep1 + " do jogador " + user1 );
 		} else if (scorep1 == scorep2) {
 			imprimir("O jogo empatou");
 		}
 		
 	}
 	
-	public static void forca(String user1, String user2) {
+	public static void forca(String player1, String player2) {
 		Scanner imput = new Scanner(System.in);
-		imprimir("\nAgora é a vez de " + user1 + " digitar uma palavra para " + user2 + " adivinhar");
+		imprimir("\nAgora é a vez de " + player1 + " digitar uma palavra para " + player2 + " adivinhar");
 		imprimir("\nDigite a palavra: ");
 		String palavra = imput.next().toUpperCase();
-		//char[] palavraSeparada = null;
-		//palavraSeparada = palavra.toCharArray();
-		//String[] palavraSeparada1 = new String[palavra.length()];
+		
 		
 		imprimir("\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 		
@@ -190,7 +189,7 @@ public class Jogos {
 		
 		int sair = 0;
 		for (int i = 0; sair < 6; i++) {
-			imprimir("\n" + user2 + " Digite uma letra: \n");
+			imprimir("\n" + player2 + " Digite uma letra: \n");
 			String letra = imput.next().toUpperCase();
 			
 			
@@ -227,6 +226,10 @@ public class Jogos {
 					forcaEnforcado(resultForca, palavra);
 				} else if (j == palavra.length()-1 && b>0 ) { 
 					imprimir("\nParabens, você acertou a letra\n");
+					if(Arrays.equals(palavraTemp, palavraTemp2)) {
+						imprimir("\nParabens, você acertou a palavra completa\n");
+						
+					}
 				}
 			}
 		}
