@@ -13,6 +13,7 @@ public class Questao01 {
 		imprimir("A Soma de todos os elementos dos arrays anteriores é: \n");
 		imprimir(temp);
 		imprimir("\n\n");
+		imprimir("A Soma de todos os elementos + 2 do array anterior é: \n");
 		imprimir(obterArray04(temp));
 
 	}
@@ -52,14 +53,16 @@ public class Questao01 {
 		
 	}
 	
-	public static int[][] obterArray04(int[][] x) {
-		int[][] arrayBid = new int[x.length][x[0].length];
-		for (int l = 0; l < arrayBid.length; l++) {
-            for (int c = 0; c < arrayBid[l].length; c++) {
-                arrayBid[l][c] = x[l][c] + 2;
-            }            
-        }
-		return arrayBid;
+	public static int[] obterArray04(int[][] x) {
+		 int[] arrayUni = new int[x.length * x[0].length];
+	        
+	        for (int l = 0, a = 0; l < x.length; l++) {
+	            for (int c = 0; c < x[l].length; c++, a++) {
+	                arrayUni[a] = x[l][c] + 2;
+	            }
+
+	        }        
+	        return arrayUni;
 	}
 	
 	
