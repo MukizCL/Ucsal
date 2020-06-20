@@ -143,7 +143,7 @@ public class Jogos {
 		for (int i = 0; i < 1; i++) {
 			
 		
-		if(forcaGame == 0) {
+		if(forcaGame == 0) { //VERIFICA SE É A PRIMEIRA OU SEGUNDA PARTIDA
 			
 			forca(user1, user2);
 			scorep2 = resultForca;
@@ -155,7 +155,7 @@ public class Jogos {
 			scorep1 = resultForca;
 		}
 		}
-		if(scorep1 < scorep2) {
+		if(scorep1 < scorep2) { //IMPRIME O RESULTADO DA PARTIDA
 			imprimir(user1 + " ganhou de " + user2 + " com  " + scorep1 + " erros, contra " + scorep2 + " do jogador " + user2 );
 		} else if (scorep1 > scorep2) {
 			imprimir(user2 + " ganhou de " + user1 + " com  " + scorep2 + " erros, contra " + scorep1 + " do jogador " + user1 );
@@ -165,7 +165,7 @@ public class Jogos {
 		
 	}
 	
-	public static void forca(String player1, String player2) {
+	public static void forca(String player1, String player2) { //METODO DE EXECUÇÃO DO JOGO
 		Scanner imput = new Scanner(System.in);
 		imprimir("\nAgora é a vez de " + player1 + " digitar uma palavra para " + player2 + " adivinhar");
 		imprimir("\nDigite a palavra: ");
@@ -237,7 +237,7 @@ public class Jogos {
 	
 		
 
-	public static void forcaEnforcado(int contador, String palavra) {
+	public static void forcaEnforcado(int contador, String palavra) { //MÉTODO QUE IMPRIME A FORCA
 		if (contador == 0) {
 			System.out.println("");
 			System.out.println("   ____________");
@@ -324,7 +324,7 @@ public class Jogos {
 			System.out.println("Fim de jogo, a palavra era " + palavra);
 		}
 
-	}
+	} // FIM DO JOGO DA FORCA
 
 
 
